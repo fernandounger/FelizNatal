@@ -1,0 +1,318 @@
+:root {
+    --color-white: #F9F9F9;
+    --color-red: #DA2535;
+    --color-pink: #F7C7B9;
+    --color-gray: #8D8D8D;
+    --color-gray-200: #404040;
+    --color-blacklight: #161212;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--color-pink);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 3px solid var(--color-pink);
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+header,
+section {
+    background-color: var(--color-pink);
+}
+
+#acessories {
+    background-color: var(--color-white);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+button {
+    border-radius: 8px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+header .header__container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 23px 15px;
+}
+
+header .header__container .header__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 500;
+}
+
+header .header__container .header__logo a {
+    font-size: clamp(0.875rem, 0.6071rem + 1.1905vw, 1.5rem);
+    color: var(--color-blacklight);
+}
+
+header .header__container .header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s ease-in-out;
+}
+
+header .header__container .header__menu li a {
+    color: var(--color-blacklight);
+    margin: 0 0 0 3.8rem;
+    font-weight: 500;
+}
+
+header .header__container .menuhamburguer {
+    display: none;
+    position: relative;
+}
+
+section .section__container--natal {
+    background-color: var(--color-pink);
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 80px 15px;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: .4s ease-in-out;
+}
+
+section .section__container--natal .natal--texts {
+    max-width: 488px;
+}
+
+section .section__container--natal .natal--title {
+    color: var(--color-blacklight);
+    font-weight: 600;
+    font-size: clamp(2.6875rem, 2.3556rem + 1.4749vw, 3.625rem);
+    line-height: 60px;
+
+}
+
+section .section__container--natal .natal--paragraph {
+    margin-top: 22px;
+    font-weight: 500;
+    color: var(--color-gray-200);
+}
+
+section .section__container--natal .btn-send {
+    margin-top: 40px;
+    padding: 12px 32px;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.8214rem + 0.2381vw, 1rem);
+}
+
+section .section__container--natal .section__image img {
+    width: 100%;
+}
+
+section .section__container--accessories {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px;
+    background-color: var(--color-white);
+}
+
+section .section__container--accessories .container__text {
+    margin: 48px auto;
+    max-width: 550px;
+}
+
+section .section__container--accessories .container__text h2 {
+    font-size: clamp(1.5rem, 0.8571rem + 2.8571vw, 3rem);
+    font-weight: 600;
+}
+
+section .section__container--accessories .container__text p {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: clamp(0.875rem, 0.8214rem + 0.2381vw, 1rem);
+    line-height: 24px;
+}
+
+section .section__container--accessories .container__giving {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section .section__container--accessories .container__giving .giving {
+    max-width: 200px;
+    margin: 60px 15px;
+}
+
+section .section__container--accessories .container__giving .giving img {
+    width: 100%;
+}
+
+section .section__container--accessories .container__giving .giving h3 {
+    font-size: clamp(0.875rem, 0.7143rem + 0.7143vw, 1.25rem);
+    color: var(--color-blacklight);
+}
+
+section .section__container--accessories .container__giving .giving p {
+    margin-top: 12px;
+    font-size: clamp(0.75rem, 0.6429rem + 0.4762vw, 1rem);
+    color: var(--color-gray);
+}
+
+section .section__container--love {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 80px 15px;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section .section__container--love .love--texts {
+    max-width: 525px;
+}
+
+section .section__container--love .love--title {
+    color: var(--color-blacklight);
+    font-weight: 600;
+    font-size: clamp(2.1875rem, 1.7162rem + 2.2179vw, 3.625rem);
+    line-height: 52px;
+}
+
+section .section__container--love .love--paragraph {
+    margin-top: 24px;
+    font-weight: 400;
+    color: var(--color-gray-200);
+}
+
+section .section__container--love .btn--shared {
+    margin-top: 30px;
+    padding: 12px 32px;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.8214rem + 0.2381vw, 1rem);
+}
+
+footer .footer__container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px 15px;
+}
+
+footer .footer__container .footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 500;
+}
+
+footer .footer__container .footer__logo a {
+    font-size: 24px;
+    color: var(--color-blacklight);
+}
+
+footer .footer__container .footer__social {
+    display: flex;
+    gap: 1.2rem;
+}
+
+footer .footer__container .footer__social div {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: var(--color-pink);
+    display: flex;
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+
+    section .section__container--natal .section__image,
+    section .section__container--love .love__image,
+    footer .footer__container .footer__logo {
+        display: none;
+    }
+
+    header .header__container .header__menu {
+        flex-direction: column;
+        position: fixed;
+        right: -100%;
+        padding: 100px 30px;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 99;
+        transition: .3s ease-in-out;
+        margin: 0;
+        background-color: var(--color-pink);
+        font-size: 24px;
+    }
+
+    header .header__container .menuhamburguer {
+        display: block;
+        z-index: 999;
+    }
+
+    header .header__container .header__menu.active {
+        right: 0;
+    }
+
+    header .header__container .header__menu li a,
+    footer .footer__container .footer__social {
+        margin: 0 auto;
+    }
+
+    section .section__container--natal,
+    section .section__container--love {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media(max-width:500px) {
+
+    section .section__container--natal .btn-send,
+    section .section__container--love .btn--shared {
+        width: 100%;
+    }
+}
