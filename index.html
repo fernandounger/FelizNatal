@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Fernando Unger">
+    <meta name="description" content="Landing Page - Feliz Natal - Desafio Codelândia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+    <title>Feliz Natal - Codelândia</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/img/logo.svg" alt="Logo noel">
+                <a href="#">Feliz Natal</a>
+            </div>
+            <nav>
+                <ul class="header__menu">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#acessories">Acessórios</a></li>
+                    <li><a href="#doacao">Doação</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                </ul>
+            </nav>
+            <img src="./assets/img/menuhamburguer.png" class="menuhamburguer active" alt="image menu hamburguer">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="section__container--natal">
+                <div>
+                    <div class="natal--texts">
+                        <h1 class="natal--title">Feliz Natal e Feliz Ano Novo!</h1>
+                        <p class="natal--paragraph">Nessas festas de fim de ano mande um presente para a pessoa amada e
+                            compartilhe a alegria
+                            do Natal.</p>
+                    </div>
+                    <div>
+                        <button class="btn-send"><i class="fa-solid fa-gift"></i> Fazer uma doação</button>
+                    </div>
+                </div>
+                <div class="section__image" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./assets/img/send.png" alt="Image Send">
+                </div>
+            </div>
+        </section>
+        <section id="acessories">
+            <div class="section__container--accessories">
+                <div class="container__text">
+                    <h2>Acessórios</h2>
+                    <p>Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do
+                        Natal.
+                    </p>
+                </div>
+                <div class="container__giving">
+                    <div class="giving" data-aos="zoom-in-up" data-aos="fade-left" data-aos-duration="1000">
+                        <div>
+                            <img src="./assets/img/acessories/giving1.png" alt="Imagem presentes">
+                        </div>
+                        <div>
+                            <h3>Presentes</h3>
+                            <p>Eles são os melhores presentes que existem.</p>
+                        </div>
+                    </div>
+                    <div class="giving" data-aos="zoom-in-up" data-aos="fade-left" data-aos-duration="1000">
+                        <div>
+                            <img src="./assets/img/acessories/giving2.png" alt=" Imagem enfeites">
+                        </div>
+                        <div>
+                            <h3>Enfeites</h3>
+                            <p>Dê uma decoração.</p>
+                        </div>
+                    </div>
+                    <div class="giving" data-aos="zoom-in-up" data-aos="fade-left" data-aos-duration="1000">
+                        <div>
+                            <img src="./assets/img/acessories/giving4.png" alt="imagem Doces">
+                        </div>
+                        <div>
+                            <h3>Doces</h3>
+                            <p>Aproveite os doces natalinos.</p>
+                        </div>
+                    </div>
+                    <div class="giving" data-aos="zoom-in-up" data-aos="fade-left" data-aos-duration="1000">
+                        <div>
+                            <img src="./assets/img/acessories/giving3.png" alt="Imagem Muito amor">
+                        </div>
+                        <div>
+                            <h3>Muito amor</h3>
+                            <p>Aproveite os sentimentos que duram para sempre.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="doacao">
+            <div class="section__container--love">
+                <div class="love__image" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./assets/img/shared.png" alt="">
+                </div>
+                <div>
+                    <div class="love--texts">
+                        <h1 class="love--title">Comemore com muito amor!</h1>
+                        <p class="love--paragraph">Nestes feriados, festeje com muito amor e paz, oferecendo muitas
+                            bênçãos aos nossos entes
+                            queridos, amigos e vizinhos, desejando-lhes um Feliz Natal.</p>
+                    </div>
+                    <div>
+                        <button class="btn--shared"><i class="fa-solid fa-gift"></i> Fazer doação</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <img src="./assets/img/logo.svg" alt="Logo noel">
+                <a href="#">Feliz Natal</a>
+            </div>
+            <div class="footer__social">
+                <div>
+                    <img src="./assets/img/social/twitter.png" alt="Icon Twitter">
+                </div>
+                <div>
+                    <img src="./assets/img/social/youtube.png" alt="Icon Youtube">
+                </div>
+                <div>
+                    <img src="./assets/img/social/linkedin.png" href="https://www.linkedin.com/in/fernandounger/"
+                        target="_blank" alt="Icon Linkedin">
+                </div>
+                <div>
+                    <img src="./assets/img/social/instagram.png" alt="Icon Instagram">
+                </div>
+                <div>
+                    <img src="./assets/img/social/facebook.png" alt="Icon Facebook">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/menu.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
