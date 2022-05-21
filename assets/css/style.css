@@ -8,8 +8,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    transition: 0.5s;
+    scroll-behavior: auto;
 }
 
 * {
@@ -89,13 +88,31 @@ header .header__container .header__menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: .5s ease-in-out;
 }
 
 header .header__container .header__menu li a {
     color: var(--color-blacklight);
     margin: 0 0 0 3.8rem;
+    position: relative;
     font-weight: 500;
+}
+
+header .header__container .header__menu li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-red);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+header .header__container .header__menu li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 header .header__container .menuhamburguer {
@@ -202,9 +219,13 @@ section .section__container--love {
     max-width: 1200px;
     padding: 80px 15px;
     flex-wrap: wrap;
-    gap: 5rem;
-    justify-content: center;
+    gap: 2rem;
+    justify-content: space-around;
     align-items: center;
+}
+
+section .section__container--love .love__image img {
+    width: 100%;
 }
 
 section .section__container--love .love--texts {
@@ -222,6 +243,7 @@ section .section__container--love .love--paragraph {
     margin-top: 24px;
     font-weight: 400;
     color: var(--color-gray-200);
+    max-width: 450px;
 }
 
 section .section__container--love .btn--shared {
@@ -237,7 +259,7 @@ footer .footer__container {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 40px 15px;
+    padding: 30px 15px;
 }
 
 footer .footer__container .footer__logo {
